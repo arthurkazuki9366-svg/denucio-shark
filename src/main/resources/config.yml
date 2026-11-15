@@ -1,0 +1,20 @@
+# SharkDenuncias - configurações
+
+# Tempo mínimo entre duas denúncias do mesmo jogador (0 = sem limite)
+cooldown-segundos: 30
+
+# Tamanho máximo do motivo (em caracteres)
+tamanho-maximo-motivo: 100
+
+# Tempo para o jogador digitar o nome/motivo no chat
+tempo-resposta-chat-segundos: 60
+
+# Motivos rápidos exibidos no menu (máximo 7).
+# Formato: "ITEM|Texto do motivo"  (nomes de itens: https://jd.papermc.io/paper/1.20/org/bukkit/Material.html)
+motivos-rapidos:
+  - "DIAMOND_SWORD|Uso de hack / cheat"
+  - "TNT|Grief / destruição de construções"
+  - "PAPER|Spam / flood no chat"
+  - "BARRIER|Ofensas / xingamentos"
+  - "REDSTONE|Abuso de bug"
+  - "CHEST|Roubo / furto de itens"

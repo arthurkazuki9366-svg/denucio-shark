@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'br.com.sharksmp'
+version = '1.0.0'
+
+repositories {
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    mavenCentral()
+}
+
+dependencies {
+    // Compilado contra Paper 1.20.4. Usa apenas APIs estáveis (Adventure, Bukkit)
+    // para continuar funcionando em versões mais novas do Paper.
+    compileOnly 'io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT'
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(17) }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+jar { archiveBaseName = 'SharkDenuncias' }

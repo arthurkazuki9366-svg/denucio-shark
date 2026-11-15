@@ -1,0 +1,13 @@
+name: SharkDenuncias
+version: 1.0.0
+main: br.com.sharksmp.denuncias.DenunciasPlugin
+api-version: "1.20"
+description: Sistema de denúncias com menu GUI e painel para OPs.
+author: SharkSMP
+commands:
+  denunciar:
+    description: Denuncia um jogador
+    usage: /denunciar [jogador] [motivo]
+  denuncias:
+    description: Painel de denúncias (somente OP)
+    usage: /denuncias
